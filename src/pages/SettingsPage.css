@@ -1,0 +1,123 @@
+/* ── SettingsPage Styles ──────────────────────────────────────── */
+
+.settings-page {
+    animation: fadeIn var(--transition-slow) ease-out;
+}
+
+/* Header */
+.settings-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.settings-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.02em;
+}
+
+.back-btn {
+    flex-shrink: 0;
+}
+
+/* Sections */
+.settings-section {
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.section-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.jira-icon {
+    background: linear-gradient(135deg, rgba(0, 82, 204, 0.2), rgba(0, 101, 255, 0.1));
+    color: #4c9aff;
+}
+
+.groq-icon {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(249, 115, 22, 0.1));
+    color: #fbbf24;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.25rem;
+}
+
+.form-grid .full-width {
+    grid-column: 1 / -1;
+}
+
+.form-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.35rem;
+}
+
+.form-hint strong {
+    color: var(--accent-secondary);
+}
+
+/* Test Buttons */
+.test-btn {
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    width: 100%;
+}
+
+/* Save Section */
+.save-section {
+    margin-top: 0.5rem;
+}
+
+.save-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .settings-header {
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+
+    .settings-title {
+        font-size: 1.35rem;
+    }
+}
