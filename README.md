@@ -1,1 +1,3 @@
 BugSnap
+
+updating readme
